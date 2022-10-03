@@ -1,5 +1,5 @@
 class Bicycle extends Light {
-    private boolean isBasket;
+    protected boolean isBasket;
 
     public Bicycle(int num, int old, int wheels, String steering, int infection, boolean engine, boolean isBasket) {
         super(num, old, wheels, steering, infection, engine);
@@ -11,12 +11,18 @@ class Bicycle extends Light {
     }
 
     public void setBasket(boolean basket) {
-        isBasket = basket;
+        this.isBasket = basket;
     }
 
     @Override
     public String toString() {
         return "Bicycle{" +
+                "num=" + num +
+                ", old=" + old +
+                ", wheels=" + wheels +
+                ", steering='" + steering + '\'' +
+                ", infection=" + infection +
+                "engine=" + engine +
                 "isBasket=" + isBasket +
                 '}';
     }

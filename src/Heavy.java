@@ -1,5 +1,5 @@
  class Heavy extends Vehicles{
-    private int numOfTrailers;
+    protected int numOfTrailers;
 
      public Heavy(int num, int old, int wheels, String steering, int infection, int numOfTrailers) {
          super(num, old, wheels, steering, infection);
@@ -16,7 +16,12 @@
 
      @Override
      public String toString() {
-         return "Heavy{" +
+         return"Heavy{" +
+                 "num=" + num +
+                 ", old=" + old +
+                 ", wheels=" + wheels +
+                 ", steering='" + steering + '\'' +
+                 ", infection=" + infection +
                  "numOfTrailers=" + numOfTrailers +
                  '}';
      }

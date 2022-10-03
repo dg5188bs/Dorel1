@@ -1,9 +1,9 @@
  class Vehicles {
-    private int num;
-    private int old;
-    private int wheels;
-    private String steering;
-    private int infection;
+    protected int num;
+     protected int old;
+     protected int wheels;
+     protected String steering;
+     protected int infection;
 
     public Vehicles(int num,int old,int wheels,String steering,int infection){
         this.num = num;
@@ -27,12 +27,18 @@
      public void setWheels(int wheels){
          this.wheels = wheels;
      }
+
      public int getWheels(){
          return wheels;
      }
      public void setSteering(String steering){
          this.steering = steering;
      }
+
+     public String getSteering() {
+         return steering;
+     }
+
      public void setInfection(int infection){
          this.infection = infection;
      }

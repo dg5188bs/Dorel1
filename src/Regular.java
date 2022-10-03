@@ -1,5 +1,5 @@
  class Regular extends Vehicles{
-     private int numOfPassengers;
+     protected int numOfPassengers;
 
      public Regular(int num, int old, int wheels, String steering, int infection, int numOfPassengers) {
          super(num, old, wheels, steering, infection);
@@ -17,6 +17,11 @@
      @Override
      public String toString() {
          return "Regular{" +
+                 "num=" + num +
+                 ", old=" + old +
+                 ", wheels=" + wheels +
+                 ", steering='" + steering + '\'' +
+                 ", infection=" + infection +
                  "numOfPassengers=" + numOfPassengers +
                  '}';
      }

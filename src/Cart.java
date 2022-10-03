@@ -1,5 +1,5 @@
  class Cart extends Light{
-    private double chargingTime;
+    protected double chargingTime;
 
      public Cart(int num, int old, int wheels, String steering, int infection, boolean engine, double chargingTime) {
          super(num, old, wheels, steering, infection, engine);
@@ -17,6 +17,12 @@
      @Override
      public String toString() {
          return "Cart{" +
+                 "num=" + num +
+                 ", old=" + old +
+                 ", wheels=" + wheels +
+                 ", steering='" + steering + '\'' +
+                 ", infection=" + infection +
+                 "engine=" + engine +
                  "chargingTime=" + chargingTime +
                  '}';
      }
