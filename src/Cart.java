@@ -14,6 +14,14 @@
          this.chargingTime = chargingTime;
      }
 
+     public double exhaust(){
+         return exhaust()+50;
+     }
+
+     public void hitchhikers(){
+         System.out.println("only"+(wheels-1)+"hitchhikers can get on the vehicle");
+     }
+
      @Override
      public String toString() {
          return "Cart{" +

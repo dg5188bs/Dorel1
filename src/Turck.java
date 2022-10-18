@@ -14,6 +14,10 @@
          this.MaxWeight = maxWeight;
      }
 
+     public double exhaust(){
+         return exhaust()*1.5;
+     }
+
      @Override
      public String toString() {
          return "Turck{" +
@@ -26,4 +30,5 @@
                  "MaxWeight=" + MaxWeight +
                  '}';
      }
+
  }

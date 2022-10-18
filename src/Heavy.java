@@ -1,4 +1,4 @@
- class Heavy extends Vehicles{
+  abstract class Heavy extends Vehicles{
     protected int numOfTrailers;
 
      public Heavy(int num, int old, int wheels, String steering, int infection, int numOfTrailers) {
@@ -14,6 +14,10 @@
          this.numOfTrailers = numOfTrailers;
      }
 
+     public double exhaust(){
+         return (exhaust())+(500*numOfTrailers);
+     }
+
      @Override
      public String toString() {
          return"Heavy{" +
@@ -25,4 +29,6 @@
                  "numOfTrailers=" + numOfTrailers +
                  '}';
      }
+
+
  }

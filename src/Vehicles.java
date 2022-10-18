@@ -1,4 +1,4 @@
- class Vehicles {
+ abstract class Vehicles {
     protected int num;
      protected int old;
      protected int wheels;
@@ -55,5 +55,9 @@
                  ", steering='" + steering + '\'' +
                  ", infection=" + infection +
                  '}';
+     }
+
+     public double exhaust(){
+        return (infection*60);
      }
  }

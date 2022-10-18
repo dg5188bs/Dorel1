@@ -1,4 +1,4 @@
- class Regular extends Vehicles{
+ abstract class Regular extends Vehicles{
      protected int numOfPassengers;
 
      public Regular(int num, int old, int wheels, String steering, int infection, int numOfPassengers) {
@@ -12,6 +12,18 @@
 
      public void setNumOfPassengers(int numOfPassengers) {
          this.numOfPassengers = numOfPassengers;
+     }
+
+     public double exhaust(){
+         return exhaust()+numOfPassengers*100;
+     }
+
+     public void noise(){
+         System.out.println(numOfPassengers*10+"Decibel");
+     }
+
+     public void hitchhikers(int RegularPassengers){
+         System.out.println("there are"+(numOfPassengers-RegularPassengers)+"hitchhikers");
      }
 
      @Override
